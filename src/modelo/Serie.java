@@ -1,15 +1,15 @@
 package modelo;
 
-public class Serie extends Pelicula {
-    private int temporada;
+public class Serie extends Titulo {
+    private int temporadas;
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;
 
-    public int getTemporada() {
-        return temporada;
+    public int getTemporadas() {
+        return temporadas;
     }
-    public void setTemporada(int temporada) {
-        this.temporada = temporada;
+    public void setTemporadas(int temporadas) {
+        this.temporadas = temporadas;
     }
     public int getEpisodiosPorTemporada() {
         return episodiosPorTemporada;
@@ -29,7 +29,10 @@ public class Serie extends Pelicula {
         System.out.println("***** FICHA TÉCNICA DE LA SERIE *****");
         System.out.println("Nombre de la serie: " + getNombre());
         System.out.println("Fecha de lanzamiento: " + getFechaDeLanzamiento());
+        System.out.println("Temporadas: " + getTemporadas());
+        System.out.println("Episodios por temporada: " + getEpisodiosPorTemporada());
         System.out.println("Tiempo de duración por episodio: " + getMinutosPorEpisodio() + " minutos");
+        System.out.println("Total duración para ver la serie: " + getTemporadas() * getTemporadas() * getMinutosPorEpisodio() + " minutos");
         System.out.println("_".repeat(30));
     }
 }

@@ -7,7 +7,9 @@ public class Main {
         matrix.setNombre("Matrix");
         matrix.setTiempoDeDuracionEnMinutos(120);
         matrix.setFechaDeLanzamiento(1999);
-
+        matrix.setDirector("Lana Wachowski & Lilly Wachowski");
+        
+        /*Sin utilizar las buenas practicas de POO*/
         // System.out.println("El nombre de la película es: " + matrix.nombre);
         // System.out.println("La duración en minutos es: " + matrix.tiempoDeDuracionEnMinutos);
         // System.out.println("La fecha de lanzamiento es: " + matrix.fechaDeLanzamiento);
@@ -23,8 +25,10 @@ public class Main {
 
         Serie papel = new Serie();
         papel.setNombre("La casa de papel");
-        papel.setMinutosPorEpisodio(60);
         papel.setFechaDeLanzamiento(2020);
+        papel.setTemporadas(4);
+        papel.setEpisodiosPorTemporada(10);
+        papel.setMinutosPorEpisodio(60);
         papel.mostrarFichaTecnica();
     }
 }
