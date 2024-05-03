@@ -5,6 +5,11 @@ public class Serie extends Titulo {
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;
 
+    @Override
+    public int getTiempoDeDuracionEnMinutos(){
+        return temporadas * episodiosPorTemporada * minutosPorEpisodio;
+    }
+
     public int getTemporadas() {
         return temporadas;
     }
@@ -32,7 +37,7 @@ public class Serie extends Titulo {
         System.out.println("Temporadas: " + getTemporadas());
         System.out.println("Episodios por temporada: " + getEpisodiosPorTemporada());
         System.out.println("Tiempo de duración por episodio: " + getMinutosPorEpisodio() + " minutos");
-        System.out.println("Total duración para ver la serie: " + getTemporadas() * getTemporadas() * getMinutosPorEpisodio() + " minutos");
+        System.out.println("Total duración para ver la serie: " + getTiempoDeDuracionEnMinutos() + " minutos");
         System.out.println("_".repeat(30));
     }
 }
