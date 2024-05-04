@@ -3,8 +3,10 @@ import modelo.Serie;
 
 public class Main {
     public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.muestraElMenu();
+        // Menu menu = new Menu();
+        // menu.muestraElMenu();
+        MenuMejorado menu = new MenuMejorado();
+        menu.mostrarMenu();
     //     Pelicula matrix = new Pelicula();
     //     matrix.setNombre("Matrix");
     //     matrix.setTiempoDeDuracionEnMinutos(120);
